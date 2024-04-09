@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/food-project-react/static/css/main.b88862a7.css",
+    "main.js": "/food-project-react/static/js/main.111fdd2a.js",
+    "static/media/bootstrap.min.css.map": "/food-project-react/static/media/bootstrap.min.css.24ed20e8476698dafba3.map",
+    "static/media/bootstrap.min.js.map": "/food-project-react/static/media/bootstrap.min.js.f34a33061c31ff49cb6f.map",
+    "index.html": "/food-project-react/index.html",
+    "main.b88862a7.css.map": "/food-project-react/static/css/main.b88862a7.css.map",
+    "main.111fdd2a.js.map": "/food-project-react/static/js/main.111fdd2a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b88862a7.css",
+    "static/js/main.111fdd2a.js"
+  ]
+}
