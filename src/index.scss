@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+  margin-top: 56px;
+  min-height: calc(100vh - 112px);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.cart {
+  position: fixed;
+  top: 5rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 5;
+  padding: 1rem;
+
+  @media (max-width: 767px) {
+    bottom: 5rem;
+    top: unset;
+  }
+}
+
+.basket-list {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 50rem;
+  max-width: 95%;
+  box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
+  animation: show 1s ease-in-out;
+  height: -webkit-fill-available;
+  overflow: auto;
+
+  &__close {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    z-index: 10;
+  }
+  &__quantity {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: #0d6efd;
+    user-select: none;
+  }
+}
+
+.alert-basket {
+  position: fixed;
+  top: 10rem;
+  right: 1rem;
+  width: 300px;
+  animation: fade-in 500ms ease-in-out;
+}
+
+@keyframes show {
+  from {
+    top: 70%;
+    opacity: 0;
+  }
+
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+img, iframe {
+  max-width: 100%;
+}
+iframe {
+  width: 600px;
+  height: 350px;
+}
+.search {
+  width: max-content;
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
